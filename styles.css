@@ -14,7 +14,7 @@ body {
 
 header {
     height: 150px;
-    width: 100vh;
+    width: 150vh;
     border-style: dotted;
     display: flex;
     flex-direction: row;
@@ -25,7 +25,7 @@ header {
 
 .about_me {
     height: 500px;
-    width: 100vh;
+    width: 150vh;
     border-style: dotted;
     display: flex;
     flex-direction: row;
@@ -36,6 +36,11 @@ header {
 
 .profile_pic {
     border-style: double;
+}
+
+.profile_pic>img {
+    height: 200px;
+    width: 300px;
 }
 
 .skills {
@@ -81,4 +86,9 @@ header {
     width: 100vh;
     border-style: dotted;
     flex-direction: column;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
 }
