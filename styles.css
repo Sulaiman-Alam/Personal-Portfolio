@@ -1,0 +1,84 @@
+html {
+    background: #eaecef;
+    color: #2f4f4f;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+header {
+    height: 150px;
+    width: 100vh;
+    border-style: dotted;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.about_me {
+    height: 500px;
+    width: 100vh;
+    border-style: dotted;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+.profile_pic {
+    border-style: double;
+}
+
+.skills {
+    width: 100vh;
+    border-style: dotted;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.language {
+    height: 50px;
+    width: 50px;
+}
+
+.experience {
+    width: 100vh;
+    border-style: dotted;
+}
+
+.education {
+    display: flex;
+    width: 100vh;
+    border-style: dotted;
+    flex-direction: column;
+}
+
+.connect {
+    display: flex;
+    width: 100vh;
+    border-style: dotted;
+    flex-direction: column;
+}
+
+.projects {
+    display: flex;
+    width: 100vh;
+    border-style: dotted;
+    flex-direction: column;
+}
