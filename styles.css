@@ -1,5 +1,4 @@
 html {
-    background: #eaecef;
     color: #2f4f4f;
     font-family: 'Arial', sans-serif;
 }
@@ -9,52 +8,85 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
 }
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+/* Header Styling */
 
 header {
-    height: 150px;
-    width: 150vh;
-    border-style: dotted;
+    border-style: solid;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 5px;
+    width: 100%;
 }
 
+/* About Me Section Styling */
+
 .about_me {
-    height: 500px;
-    width: 150vh;
-    border-style: dotted;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .profile_pic {
     border-style: double;
+    margin: 20px;
 }
 
 .profile_pic>img {
-    height: 200px;
-    width: 300px;
+    height: 400px;
+    width: 600px;
 }
 
+.bigcard {
+    border-style: solid;
+    border-color: #2f4f4f;
+    border-radius: 10px;
+}
+
+/* Skills Section Styling */
+
 .skills {
-    width: 100vh;
-    border-style: dotted;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.lang {
+.skillcard {
     display: flex;
+    align-items: center;
     flex-direction: column;
+}
+
+.smallcard {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #2f4f4f;
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+.smallcard>p {
+    padding: 5px;
+}
+
+.smallcard:hover {
+    background-color: gray;
 }
 
 .language {
@@ -62,33 +94,99 @@ header {
     width: 50px;
 }
 
-.experience {
-    width: 100vh;
-    border-style: dotted;
-}
+
+/* Education Section Styling */
 
 .education {
     display: flex;
-    width: 100vh;
-    border-style: dotted;
-    flex-direction: column;
+    width: 75%;
+    /* border-style: solid; */
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 25px;
+    padding: 10px;
+    align-items: center;
+    padding: 25px;
 }
 
-.connect {
+.mediumcard {
     display: flex;
-    width: 100vh;
-    border-style: dotted;
+    border-style: solid;
+    border-radius: 10px;
     flex-direction: column;
+    padding: 20px;
+    margin: 20px;
 }
+
+/* Project Section Styling */
 
 .projects {
     display: flex;
-    width: 100vh;
-    border-style: dotted;
-    flex-direction: column;
+    /* border-style: solid; */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+    padding: 10px;
+}
+
+.projectcard {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #2f4f4f;
+    padding: 25px;
+    margin: 25px;
+}
+
+/* Experience Section Styling */
+
+.experience {
+    /* border-style: solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.largishcard {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #2f4f4f;
+    margin: 20px;
+    padding: 20px;
+}
+
+.experience>h2 {
+    margin: 20px;
+}
+
+/* Connection Section Styling (Footer) */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
 }
 
 .socials {
     display: flex;
     flex-direction: row;
+}
+
+/* Bonus Stuff for Fun */
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    border-radius: 10px;
+    border-style: solid;
+}
+
+button:hover {
+    background-color: bisque;
 }
