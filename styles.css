@@ -1,6 +1,7 @@
 html {
-    color: #2f4f4f;
-    font-family: 'Arial', sans-serif;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 
 body {
@@ -8,185 +9,195 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
 }
 
 .darkmode {
-    background-color: black;
-    color: white;
+    background-color: #1a1a1a;
+    color: #eaeaea;
+}
+
+.darkmode .darktext {
+    color: black;
 }
 
 /* Header Styling */
-
 header {
-    border-style: solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    padding: 20px 0;
     width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #222;
+}
+
+header h3 {
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 5px;
 }
 
 /* About Me Section Styling */
-
 .about_me {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
     border-radius: 10px;
     margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile_pic {
-    border-style: double;
     margin: 20px;
+    text-align: center;
 }
 
-.profile_pic>img {
-    height: 400px;
-    width: 600px;
+.profile_pic img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .bigcard {
-    border-style: solid;
-    border-color: #2f4f4f;
+    max-width: 600px;
+    border: 1px solid #dddddd;
     border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bigcard h2 {
+    color: #222;
+    margin-bottom: 15px;
 }
 
 /* Skills Section Styling */
-
 .skills {
-    border-style: solid;
-    border-radius: 10px;
-    margin: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .skillcard {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skillcard h3 {
+    color: #222;
+    margin-bottom: 15px;
 }
 
 .smallcard {
-    border-style: solid;
-    border-radius: 10px;
-    border-color: #2f4f4f;
-    margin: 25px;
-    padding: 10px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-}
-
-.smallcard>p {
-    padding: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
 }
 
 .smallcard:hover {
-    background-color: gray;
+    transform: scale(1.05);
+    background-color: #f1f1f1;
 }
 
 .language {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
-
 /* Education Section Styling */
-
 .education {
     display: flex;
-    width: 75%;
-    /* border-style: solid; */
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 25px;
-    padding: 10px;
-    align-items: center;
-    padding: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .mediumcard {
-    display: flex;
-    border-style: solid;
+    max-width: 400px;
+    background-color: #f9f9f9;
     border-radius: 10px;
-    flex-direction: column;
     padding: 20px;
-    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Project Section Styling */
-
-.projects {
-    display: flex;
-    /* border-style: solid; */
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 25px;
-    padding: 10px;
+.mediumcard h4 {
+    color: #222;
+    margin-bottom: 10px;
 }
 
-.projectcard {
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #2f4f4f;
-    padding: 25px;
-    margin: 25px;
-}
-
-/* Experience Section Styling */
-
-.experience {
-    /* border-style: solid; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.largishcard {
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #2f4f4f;
-    margin: 20px;
-    padding: 20px;
-}
-
-.experience>h2 {
-    margin: 20px;
-}
-
-/* Connection Section Styling (Footer) */
-
+/* Footer Styling */
 footer {
-    width: 100%;
+    background-color: #333333;
+    color: #ffffff;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    border-style: solid;
+    padding: 20px;
+    gap: 10px;
 }
 
-.socials {
-    display: flex;
-    flex-direction: row;
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
 }
 
-/* Bonus Stuff for Fun */
-
-.hidden {
-    visibility: hidden;
+footer a:hover {
+    color: #ffa500;
 }
 
 button {
-    border-radius: 10px;
-    border-style: solid;
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: bisque;
+    background-color: #004a99;
+}
+
+.hidden {
+    visibility: hidden;
 }
