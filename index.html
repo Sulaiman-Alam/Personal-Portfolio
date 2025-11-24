@@ -2,334 +2,255 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sulaiman Alam • Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap (CSS only for layout utilities + navbar) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <title>Sulaiman Alam - Portfolio</title>
 </head>
 
-<body class="">
-    <!-- Menu bar Section -->
-    <header class="">
-        <h1>Sulaiman Alam</h1>
-        <h3>Aspiring Computer Scientist</h3>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about_me">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                    </ul>
-                </div>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Sulaiman Alam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about_me">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-inner fade-in">
+            <h1 class="hero-title">Sulaiman Alam</h1>
+            <p class="hero-subtitle">Aspiring Computer Scientist — Front-End • Data Analysis • Software Engineering</p>
+            <a class="hero-btn" href="#projects">View Projects</a>
+        </div>
     </header>
 
-    <!-- Section for about me -->
-    <div id="about_me" class="about_me darktext">
-        <!-- First portion is for the profile image or head picture -->
-        <div class="profile_pic">
-            <img src="https://www.shutterstock.com/image-photo/idea-light-bulb-flying-sky-600nw-2327548095.jpg" />
-        </div>
+    <!-- ABOUT -->
+    <main>
+        <section id="about_me" class="section container fade-in">
+            <div class="about-grid">
+                <div class="img-wrapper">
+                    <img alt="profile photo"
+                        src="https://www.shutterstock.com/image-photo/idea-light-bulb-flying-sky-600nw-2327548095.jpg">
+                </div>
 
-        <!-- Second portion is for the text -->
-        <div class="bigcard">
-            <h2>About Me</h2>
-            <p>Hello everyone! My name is Sulaiman Alam, and I am an aspiring comptuer scientist! Currently, I am
-                pursuing a degree at Queens College with a double major in Computer Science and Applied Mathematics. I
-                have had previous experiences in both teaching as well as in various roles in computer engineering. I
-                hope to primarily focus on front end development or data analysis using statistical models.</p>
-        </div>
-    </div>
-
-    <!-- Section for skills and tools -->
-    <div id="skills" class="skills darktext">
-
-        <!-- First section for programming languages known -->
-        <div class="skillcard">
-            <h3>Languages</h3>
-            <div class="smallcard">
-                <p>HTML</p>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
-                        class="language" /></a>
+                <div class="text-wrapper">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello — I'm <strong>Sulaiman Alam</strong>. I study Computer Science and Applied Mathematics
+                        with a
+                        focus on building usable front-ends and applying statistical methods for data analysis. I enjoy
+                        crafting clear user interfaces and solving algorithmic problems.
+                    </p>
+                    <p class="muted">Currently pursuing an M.Eng. at Cornell Tech (Class of 2026).</p>
+                </div>
             </div>
+        </section>
 
-            <div class="smallcard">
-                <p>CSS</p>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                        class="language" /></a>
+        <!-- SKILLS -->
+        <section id="skills" class="section dark-section fade-in">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <h4>Languages</h4>
+                        <ul class="skill-list">
+                            <li>HTML / CSS</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Wolfram Mathematica</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h4>Tools & Platforms</h4>
+                        <ul class="skill-list">
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>Microsoft SQL Server / SSMS</li>
+                            <li>Oracle SQL</li>
+                            <li>Power Automate</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="smallcard">
-                <p>JavaScript</p>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
-                        class="language" /></a>
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section fade-in">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Experience</h2>
+
+                <div class="exp-grid">
+
+                    <article class="exp-card">
+                        <div class="exp-head">
+                            <h4>CUNY Building Performance Lab</h4>
+                            <span class="exp-role">Front End Engineer Intern • Oct 2023 – Present</span>
+                        </div>
+
+                        <button class="toggle-btn" data-target="exp1" aria-expanded="false">View Details</button>
+                        <ul id="exp1" class="hidden">
+                            <li>Uploaded 40+ pages to the prototype site using HTML/Markdown and collaborated on UI
+                                improvements.</li>
+                            <li>Used Docker locally for testing and debugging the deployment stack.</li>
+                        </ul>
+                    </article>
+
+                    <article class="exp-card">
+                        <div class="exp-head">
+                            <h4>QC Learning Commons</h4>
+                            <span class="exp-role">Tutor & College Assistant • Feb 2023 – Present</span>
+                        </div>
+
+                        <button class="toggle-btn" data-target="exp2" aria-expanded="false">View Details</button>
+                        <ul id="exp2" class="hidden">
+                            <li>Tutored 100+ students across CS and Math courses; served as TA for multiple courses.
+                            </li>
+                            <li>Built an automated time-off system to simplify tutor scheduling and admin approvals.
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="exp-card">
+                        <div class="exp-head">
+                            <h4>Google</h4>
+                            <span class="exp-role">Full Stack Intern • Jul 2022 – Aug 2022</span>
+                        </div>
+
+                        <button class="toggle-btn" data-target="exp3" aria-expanded="false">View Details</button>
+                        <ul id="exp3" class="hidden">
+                            <li>Completed an intensive front-end + JS curriculum and led a small team project for a
+                                workout app resource.</li>
+                            <li>Presented the final product to engineers and staff at Google NYC.</li>
+                        </ul>
+                    </article>
+
+                </div>
             </div>
+        </section>
 
-            <div class="smallcard">
-                <p>Java</p>
-                <a href="https://www.java.com/en/" target="_blank"><img
-                        src="https://brandlogos.net/wp-content/uploads/2021/11/java-logo.png" class="language" /></a>
+        <!-- EDUCATION -->
+        <section id="education" class="section dark-section fade-in">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Education</h2>
+
+                <div class="edu-grid">
+
+                    <article class="exp-card">
+                        <div class="exp-head">
+                            <h4>Cornell Tech, Cornell University</h4>
+                            <span class="exp-role">M.Eng. in Computer Science (Merit Scholarship) • May 2026</span>
+                        </div>
+
+                        <button class="toggle-btn" data-target="edu1" aria-expanded="false">View Details</button>
+                        <ul id="edu1" class="hidden">
+                            <li><strong>Related Coursework:</strong> Accessibility & Inclusive Design; Algorithms & Data
+                                Structures for Applications; Cryptography</li>
+                        </ul>
+                    </article>
+
+                    <article class="exp-card">
+                        <div class="exp-head">
+                            <h4>CUNY Queens College</h4>
+                            <span class="exp-role">B.A. Computer Science & Applied Mathematics • Aug 2022 – May
+                                2025</span>
+                        </div>
+
+                        <button class="toggle-btn" data-target="edu2" aria-expanded="false">View Details</button>
+                        <ul id="edu2" class="hidden">
+                            <li><strong>GPA:</strong> 3.84 • Merit Scholarship</li>
+                            <li><strong>Related Coursework:</strong> Design & Analysis of Algorithms; Probability Theory
+                                & Data Science; Database Systems; Mathematical Models</li>
+                            <li><strong>Honors & Awards:</strong> Dean’s List; Phi Beta Kappa; Presidential Scholar;
+                                Lucille Lindberg Scholarship Award</li>
+                        </ul>
+                    </article>
+
+                </div>
             </div>
+        </section>
 
-            <div class="smallcard">
-                <p>C++</p>
-                <a href="https://cplusplus.com/" target="_blank"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
-                        class="language" /></a>
+        <!-- PROJECTS -->
+        <section id="projects" class="section fade-in">
+            <div class="container">
+                <h2 class="section-title text-center mb-4">Projects</h2>
+
+                <div class="project-grid">
+
+                    <a class="project-card" href="https://github.com/Sulaiman-Alam/Build-Project-2024" target="_blank"
+                        rel="noopener">
+                        <h4>Builds Fellowship Final Project</h4>
+                        <p class="muted">July 2024 – Sept 2024</p>
+                    </a>
+
+                    <a class="project-card" href="https://github.com/Sulaiman-Alam/MATH-250-Projects" target="_blank"
+                        rel="noopener">
+                        <h4>MATH 250 — Mathematica Projects</h4>
+                        <p class="muted">Feb 2023 – May 2023</p>
+                    </a>
+
+                    <div class="project-card">
+                        <h4>Learning Commons Time Off System</h4>
+                        <p class="muted">Jun 2023 – Sept 2023</p>
+                    </div>
+
+                    <a class="project-card" href="https://github.com/viewbetic/Viewbetic" target="_blank"
+                        rel="noopener">
+                        <h4>ViewBetic Application</h4>
+                        <p class="muted">Aug 2024 – Dec 2024</p>
+                    </a>
+
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="smallcard">
-                <p>Python</p>
-                <a href="https://www.python.org/" target="_blank"><img
-                        src="https://image.similarpng.com/very-thumbnail/2021/12/Python-programming-logo-on-transparent-background-PNG.png"
-                        class="language" /></a>
+    <!-- SCROLL TO TOP -->
+    <button id="topBtn" aria-label="Scroll to top">↑</button>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Connect with me</p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/sulaiman-alam-500809218/" target="_blank"
+                    rel="noopener">LinkedIn</a>
+                <a href="https://github.com/Sulaiman-Alam" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:sanewyork1931@gmail.com">Email</a>
+                <span class="muted">• (929) 206-9434</span>
             </div>
-
-            <div class="smallcard">
-                <p>Wolfram Mathematica</p>
-                <a href="https://www.wolfram.com/mathematica/" target="_blank"><img
-                        src="https://content.wolfram.com/sites/43/2018/12/spikey-wolfram-logo.png"
-                        class="language" /></a>
-            </div>
-
-            <div class="smallcard">
-                <p>SQL</p>
-                <a href="https://www.mysql.com/" target="_blank"><img
-                        src="https://icon2.cleanpng.com/20180617/apq/aa6tl6bzx.webp" class="language" /></a>
-            </div>
-        </div>
-
-        <!-- Second section for programming tools known -->
-        <div class="skillcard">
-            <h3>Tools</h3>
-            <div class="smallcard">
-                <p>Git</p>
-                <a href="https://git-scm.com/" target="_blank"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
-                        class="language" /></a>
-            </div>
-
-            <div class="smallcard">
-                <p>Docker</p>
-                <a href="https://www.docker.com/" target="_blank"><img
-                        src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
-                        class="language" /></a>
-            </div>
-
-            <div class="smallcard">
-                <p>Microsoft Power Automate</p>
-                <a href="https://www.microsoft.com/en-us/power-platform/products/power-automate" target="_blank"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Microsoft_Power_Automate.svg/800px-Microsoft_Power_Automate.svg.png"
-                        class="language" /></a>
-            </div>
-
-            <div class="smallcard">
-                <p>Microsoft SQL Management Studio</p>
-                <a href="https://learn.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms?view=sql-server-ver16"
-                    target="_blank"><img
-                        src="https://img.stackshare.io/service/7096/809746be-0b96-4af0-aa2f-5d1aeaa82658.png"
-                        class="language" /></a>
-            </div>
-
-            <div class="smallcard">
-                <p>Oracle SQL</p>
-                <a href="https://www.oracle.com/database/sqldeveloper/" target="_blank"><img
-                        src="https://logos-world.net/wp-content/uploads/2020/09/Oracle-Symbol.png"
-                        class="language" /></a>
-            </div>
-        </div>
-
-        <!-- Third section is for further technologies known (can delete if not useful) -->
-    </div>
-
-    <!-- Section for Education -->
-
-    <div id="education" class="education darktext">
-        <h2>Education</h2>
-        <!-- College Education -->
-
-        <div class="mediumcard">
-            <h4>CUNY Queens College</h4>
-            <p>BA: Computer Science & Applied Mathematics <em>(May 2025)</em></p>
-            <p><u>Related Coursework:</u> Data Structures & Algorithms, OOP in C++ & Java, Software Engineering
-                Introduction to
-                Mathematical Probability &
-                Statistics, Mathematical Modelling using Python, Probability Theory for Data Science, Database Systems &
-                Algorithms, Internet and Web Technologies</p>
-        </div>
-
-        <!-- Extra Education from Google -->
-        <div class="mediumcard">
-            <h4>Google G-SWEP Mentorship</h4>
-            <em>July 2024 - September 2024</em>
-            <ul>
-                <li>Outperformed 350+ applicants to participate in the program, attending workshops held at the NYC
-                    Google Office</li>
-                <li>Mentored by Google SWE for 10 weeks in problem solving and algorithms and good coding practices for
-                    potential SWEs</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Section for Experience -->
-
-    <div id="experience" class="experience">
-
-        <h2>Experience</h2>
-        <!-- Experience 1 -->
-        <div class="largishcard">
-            <h4>CUNY Building Performance Lab - <em>Front End Engineer Intern (October 2023 - Current)</em></h4>
-            <button id="button1">View Details</button>
-            <ul class="hidden" id="experience1">
-                <li>Collaborated with a team of engineers and software developers on their prototype website for
-                    building systems within NYC</li>
-                <li>Uploaded 40 different individual pages onto the site using HTML/Markdown, showcasing attention to
-                    detail and coding
-                    proficiency</li>
-                <li>Used tools such as Docker to test the changes made on the site as well as troubleshoot any errors
-                    that happened</li>
-            </ul>
-        </div>
-
-        <!-- Experience 2 -->
-        <div class="largishcard">
-            <h4>QC Learning Commons - <em>Tutor/College Assistant (February 2023 - Current)</em></h4>
-            <button id="button2">View Details</button>
-            <ul class="hidden" id="experience2">
-                <li>Tutored over 100 students in various Mathematics and Computer Science course ranging from beginner
-                    level courses to high
-                    level courses</li>
-                <li>Collaborated with other tutors and staff in events hosted by the Learning Commons as well as in
-                    holding group study
-                    sessions for students in Computer Science and Math classes with each session having 30 to 100+
-                    students</li>
-                <li>Developed an automated program that allows tutors to request time off easily through Microsoft Forms
-                    and for
-                    administrators to approve the request with ease, and delivered product within 2 months with full
-                    implementation</li>
-                <li>Collaborated as a Teaching Assistant in Discrete Mathematics, Pre-Calculus, and Introduction to
-                    Algorithmic Problem
-                    Solving, helping 200+ students in class and office hours, as well in the professor(s) in grading
-                    quizzes and exams</li>
-            </ul>
-        </div>
-
-        <!-- Experience 3 -->
-        <div class="largishcard">
-            <h4>QC Office of Student Development and Leadership - <em>Orientation Leader (June 2023 - August 2023)</em>
-            </h4>
-            <button id="button3">View Details</button>
-            <ul class="hidden" id="experience3">
-                <li>Collaborated with 10 other Orientation Leaders and staff to plan and carry out weekly events for new
-                    freshmen and
-                    incoming transfer students for Queens College</li>
-                <li>Led panel discussions answering various questions about the college</li>
-                <li>Planned and help execute the Welcome Day ceremony at the end of the summer for almost 300 new
-                    students, and making sure
-                    all of the events that day went according to plan</li>
-            </ul>
-        </div>
-
-        <!-- Experience 4 -->
-        <div class="largishcard">
-            <h4>Google - <em>Full Stack Intern (July 2022 - August 2022)</em></h4>
-            <button id="button4">View Details</button>
-            <ul class="hidden" id="experience4">
-                <li>Participated in a 4-week intensive computer science summer program for eager computer science
-                    students</li>
-                <li>Completed an introductory project-based HTML/CSS and JavaScript curriculum taught by Google
-                    engineers</li>
-                <li>Led the development of a javascript website using HTML/CSS + JavaScript to serve as a resource for
-                    gym workouts</li>
-                <li>Delivered a collaborative final project presentation and live demonstration to Google Staff and
-                    Community Leaders</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <!-- Section for Projects -->
-
-    <div id="projects" class="projects">
-        <h2>Projects</h2>
-        <!-- Builds Fellowship Project -->
-        <div class="projectcard">
-            <a href="https://github.com/Sulaiman-Alam/Build-Project-2024" target="_blank">
-                <h4>Builds Fellowship Final Project</h4>
-            </a>
-            <p>July 2024 - September 2024</p>
-        </div>
-
-        <!-- MATH 250 Wolfram Mathematica Projects -->
-        <div class="projectcard">
-            <a href="https://github.com/Sulaiman-Alam/MATH-250-Projects" target="_blank">
-                <h4>MATH 250 Projects</h4>
-            </a>
-            <p>February 2023 - May 2023</p>
-        </div>
-
-        <!-- Learning Commons Time Off Form Project -->
-        <div class="projectcard">
-            <h4>Learning Commons Time Off System</h4>
-            <p>June 2023 - September 2023</p>
-        </div>
-
-        <!-- ViewBetic Application -->
-        <div class="projectcard">
-            <a href="https://github.com/viewbetic/Viewbetic" target="_blank">
-                <h4>ViewBetic Application</h4>
-            </a>
-            <p>August 2024 - December 2024</p>
-        </div>
-    </div>
-
-    <!-- Section for Connect -->
-
-    <footer class="">
-        <a href="https://www.linkedin.com/in/sulaiman-alam-500809218/"><img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png"
-                class="language" /></a>
-        <a href="https://github.com/Sulaiman-Alam"><img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-                class="language" /></a>
-        <p><a href="mailto:sanewyork1931@gmail.com">sanewyork1931@gmail.com</a></p>
-        <p>(929) 206 9434</p>
-        <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="toggleButton">
-            <label class="form-check-label" for="flexSwitchCheckDefault" id="toggleButtonLabel">Light Mode</label>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
 </body>
 
 </html>

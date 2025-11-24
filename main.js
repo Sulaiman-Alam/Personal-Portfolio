@@ -1,33 +1,59 @@
-// JS Code for light/dark mode
-const toggle = document.querySelector("#toggleButton");
-const toggleLabel = document.querySelector("#toggleButtonLabel");
+// ------------ Toggle details for experiences/education -------------
+document.querySelectorAll(".toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const id = btn.dataset.target;
+        const node = document.getElementById(id);
+        if (!node) return;
 
-toggle.addEventListener("change", (event) => {
-    if (event.target.checked) {
-        document.body.classList.add("darkmode");
-        toggleLabel.innerText = "Dark Mode";
-    } else {
-        document.body.classList.remove("darkmode");
-        toggleLabel.innerText = "Light Mode";
-    }
-    console.log(event);
-    console.log(document.querySelector("#toggleButtonLabel"));
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        // toggle aria
+        btn.setAttribute("aria-expanded", String(!expanded));
+
+        // toggle visibility (use block so lists look natural)
+        if (node.classList.contains("hidden")) {
+            node.classList.remove("hidden");
+            node.style.display = "block";
+        } else {
+            node.classList.add("hidden");
+            node.style.display = "none";
+        }
+    });
 });
 
-// JS Code for pop up text
-let buttonState = [false, false, false, false];
-for (let i = 1; i <= 4; i++) {
-    const button = document.querySelector(`#button${i}`);
-    console.log(button);
-    button.addEventListener("click", () => {
-        buttonState[i - 1] = !buttonState[i - 1];
-        const experienceText = document.querySelector(`#experience${i}`);
-        console.log(experienceText);
-        if (buttonState[i - 1]) {
-            experienceText.classList.remove("hidden");
-        } else {
-            experienceText.classList.add("hidden");
+// ------------- Fade-in on scroll using IntersectionObserver -------------
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            // optional: unobserve after it becomes visible
+            io.unobserve(entry.target);
         }
-        console.log(buttonState);
     });
-}
+}, { threshold: 0.2 });
+
+document.querySelectorAll(".fade-in").forEach(el => io.observe(el));
+
+// ------------- Scroll to top button -------------
+const topBtn = document.getElementById("topBtn");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 450) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+});
+topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+// ------------- Small accessibility improvement: close navbar on link click (mobile) -------------
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const bsCollapse = document.querySelector('.navbar-collapse');
+        if (bsCollapse && bsCollapse.classList.contains('show')) {
+            // use bootstrap's collapse via clicking the toggler if open
+            document.querySelector('.navbar-toggler')?.click();
+        }
+    });
+});
+
+// ------------- Ensure initial hidden lists are hidden by style (in case CSS didn't run yet) -------------
+document.querySelectorAll('.hidden').forEach(n => n.style.display = "none");
